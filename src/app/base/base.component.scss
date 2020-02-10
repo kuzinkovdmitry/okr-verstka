@@ -1,0 +1,147 @@
+:host {
+  position: relative;
+  display: block;
+  height: 100vh;
+  padding: 61px 0;
+  background: url("../../assets/images/base-background.png") no-repeat scroll center top;
+  background-size: cover;
+  box-sizing: border-box;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: multiply;
+    background-color: #5e239d;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: multiply;
+    background: linear-gradient(90deg, #5e239d 0%, rgba(196, 196, 196, 0) 56.77%);
+  }
+}
+
+.base {
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px 0 147px;
+  }
+
+  &__logo {
+    color: #fcfcfc;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 43px;
+    letter-spacing: 2px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin-right: 54px;
+      color: #fcfcfc;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14.4px;
+      letter-spacing: 2px;
+      opacity: 0.8;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        border-bottom: 1px solid rgba(#fcfcfc, .8);
+      }
+
+      &.__active {
+        opacity: 1;
+        border-bottom: 1px solid #fcfcfc;
+      }
+    }
+  }
+
+  &__phone-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone-number {
+    margin-left: 18px;
+    color: #fcfcfc;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 14.4px;
+    line-height: 30px;
+  }
+
+  &__info {
+    width: 686px;
+    margin-top: 180px;
+    padding: 0 120px 0 147px;
+
+    &-question {
+      font-weight: 800;
+      font-size: 14.4px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #fcfcfc;
+    }
+
+    &-answer {
+      margin-top: 18px;
+      font-weight: 900;
+      font-size: 99px;
+      line-height: 140px;
+      color: #FCFCFC;
+
+      span {
+        color: #F61067;
+      }
+    }
+  }
+
+  &__goto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 108px;
+    width: fit-content;
+    margin-top: 70px;
+    padding: 0 39px 0 147px;
+    border: 1px solid rgba(#ffffff, .25);
+    border-left: none;
+
+    &-text {
+      margin-right: 50px;
+      font-size: 18px;
+      line-height: 29px;
+      color: #fcfcfc;
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+}

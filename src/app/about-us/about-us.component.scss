@@ -1,0 +1,94 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 126px 147px 261px 147px;
+  background-color: #150433;
+}
+
+.about-us {
+
+  &__name {
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #f61067;
+  }
+
+  &__title {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 67px;
+    color: #fcfcfc;
+  }
+
+  &__subtitle {
+    width: 550px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 29px;
+    color: #fcfcfc;
+  }
+
+  &__services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 75px;
+    margin-top: 90px;
+
+    &-webdesign {
+      .about-us__services-title {
+        color: #00f0b5;
+      }
+    }
+
+    &-webdev {
+      .about-us__services-title {
+        color: #f61067;
+      }
+    }
+
+    &-marketing {
+      .about-us__services-title {
+        color: #f67110;
+      }
+    }
+
+    &-title {
+      margin-top: 18px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    &-text {
+      margin-top: 27px;
+      font-size: 16.2px;
+      line-height: 26px;
+      color: #FCFCFC;
+    }
+  }
+
+  &__learn-more {
+    height: 45px;
+    width: 197px;
+    margin-top: 100px;
+    padding: 0;
+    border-radius: 36px;
+    text-transform: uppercase;
+    background-color: #f61067;
+    color: #fcfcfc;
+    font-weight: 500;
+    font-size: 13.5px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    border: none;
+    font-family: "M PLUS 1p", sans-serif;
+    cursor: pointer;
+  }
+}

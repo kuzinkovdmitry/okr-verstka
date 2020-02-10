@@ -1,0 +1,107 @@
+:host {
+  display: block;
+  height: 100vh;
+  background-color: #fcfcfc;
+}
+
+.peoples {
+  &__bubbles {
+    position: relative;
+    height: 50%;
+    width: 100%;
+  }
+
+  &__main-person {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__quote {
+    position: absolute;
+    top: 325px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__purple-nigga {
+    position: absolute;
+    top: 104px;
+    left: 10%;
+  }
+
+  &__green-china {
+    position: absolute;
+    top: 239px;
+    left: 20%;
+  }
+
+  &__pink-blonde-men {
+    position: absolute;
+    top: 314px;
+    left: 3%;
+  }
+
+  &__green-girl {
+    position: absolute;
+    top: 42px;
+    right: 3%;
+  }
+
+  &__purple-girl {
+    position: absolute;
+    top: 153px;
+    right: 15%;
+  }
+
+  &__green-nigga {
+    position: absolute;
+    top: 233px;
+    right: 25%;
+  }
+
+  &__pink-men {
+    position: absolute;
+    top: 261px;
+    right: 3%;
+  }
+
+  &__info {
+    margin-top: 80px;
+  }
+
+  &__info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0 147px;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &__info-text {
+    width: 754px;
+    text-align: center;
+    font-family: 'Noticia Text', serif;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 64px;
+    color: #30233D;
+  }
+
+  &__info-name {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 29px;
+    color: #30233d;
+
+    span {
+      font-weight: 800;
+      color: #f61067;
+    }
+  }
+}
